@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Product from "./Product";
+import productInfo from "./data";
 const Home = () => {
   return (
     <div className="home">
@@ -11,22 +12,18 @@ const Home = () => {
           alt=""
         />
         <div className="home__row">
-          <Product
-            key={100}
-            id={3203203}
-            title="Sandisk USB 64GB Pendrive"
-            price={9.55}
-            rating={3}
-            image="https://m.media-amazon.com/images/I/71bV203ASmL._SL1500_.jpg"
-          />
-          <Product
-            id={3203243}
-            key={101}
-            title="Sandisk USB 64GB Pendrive"
-            price={894}
-            rating={3}
-            image="https://m.media-amazon.com/images/I/71bV203ASmL._SL1500_.jpg"
-          />
+          {productInfo.map((item) => {
+            return (
+              <Product
+                id={item.id}
+                key={item.key}
+                image={item.image}
+                title={item.title}
+                price={item.price}
+                rating={item.rating}
+              />
+            );
+          })}
         </div>
         <div className="home__row">
           <Product

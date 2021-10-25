@@ -57,3 +57,21 @@
   margin-top: 10px;
   border-color: darkgray;
 }
+.login__googleSignIn {
+  background-color: white;
+  margin-top: 10px;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+.login__googleSignIn > img {
+  width: 20px;
+  margin-right: -70px;
+}
+.laugh {
+  width: 14px;
+}
