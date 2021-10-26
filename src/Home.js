@@ -12,6 +12,7 @@ const Home = () => {
           alt=""
         />
         <ProdData />
+        
       </div>
     </div>
   );
